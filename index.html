@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timer App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Timer App</h1>
+        <div class="timer-display" id="timer-display">00:00:00</div>
+        <div class="mode-buttons">
+            <button class="mode-btn active" data-time="300" id="short-break-btn">Short Break (5 min)</button>
+            <button class="mode-btn" data-time="900" id="long-break-btn">Long Break (15 min)</button>
+        </div>
+        <div class="control-buttons">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn" disabled>Stop</button>
+            <button id="reset-btn" disabled>Reset</button>
+        </div>
+        <audio id="alarm-audio" src="alarm.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
